@@ -1,0 +1,20 @@
+.split-pane-divider{
+	-fx-pref-width :  0 ;
+	}
+
+.button{
+	-fx-background-radius: 0 10 0 10 ;
+	-fx-border-color: #3754FE ;
+	-fx-border-radius: 0 10 0 10 ;
+	-fx-text-fill: white ;
+}
+.button:hover{
+	-fx-background-color: #2C2C2C;
+	-fx-border-color: white;
+	-fx-border-radius: 0 10 0 10 ;
+	
+}
+#calque{
+    -fx-background-image: url("back.jpg");
+    -fx-background-repeat: stretch;   
+}

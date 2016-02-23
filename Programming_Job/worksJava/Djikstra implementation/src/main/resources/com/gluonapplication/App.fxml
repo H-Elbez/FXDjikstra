@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="605.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.Controller">
+   <children>
+      <SplitPane dividerPositions="0.7473841554559043" prefHeight="435.0" prefWidth="671.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="calque" minHeight="0.0" minWidth="0.0" onMouseClicked="#ajouterNoeud" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" SplitPane.resizableWithParent="false" />
+          <AnchorPane maxWidth="150.0" minHeight="0.0" minWidth="150.0" prefHeight="160.0" prefWidth="150.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="271.0" maxWidth="250.0" minWidth="250.0" prefHeight="433.0" prefWidth="250.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="tv_poid" prefHeight="15.0" prefWidth="47.0" text="Poid :" textFill="WHITE" />
+                        <TextField fx:id="poid" maxWidth="90.0" minWidth="50.0" prefHeight="25.0" prefWidth="90.0" promptText="...">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></TextField>
+                        <Button fx:id="valider" mnemonicParsing="false" onAction="#set_weight" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #3754FE;" text="Valider" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin></Button>
+                        <Button fx:id="ajoutern" alignment="CENTER" mnemonicParsing="false" onAction="#ajouterNoeud" prefWidth="135.0" text="Ajouter Neoud" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="ajoutera" mnemonicParsing="false" onAction="#ajouterArc" prefHeight="25.0" prefWidth="135.0" text="Ajouter Arc" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="calculer" mnemonicParsing="false" onAction="#CalculerChemin" prefWidth="135.0" text="Calculer " textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="supprimern" mnemonicParsing="false" onAction="#SupprimerNoeud" prefWidth="135.0" text="Reset" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="Exit" mnemonicParsing="false" onAction="#Exitapp" prefWidth="135.0" text="Exit" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="affichage" layoutX="62.0" layoutY="172.0" prefHeight="51.0" prefWidth="130.0" text="Distance : " textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
